@@ -1,8 +1,8 @@
 {
-  "name": "assignment-5",
+  "name": "assignment-6",
   "private": true,
   "version": "5.0.0",
-  "description": "WEB222 Assignment 5",
+  "description": "WEB222 Assignment 6",
   "scripts": {
     "eslint": "eslint src/**/*.js",
     "prettier": "prettier --write \"src/**/*.{html,css,js}\"",
@@ -11,9 +11,10 @@
     "server": "parcel src/index.html",
     "start": "npm run server",
     "dev": "npm run server",
-    "zip": "bestzip assignment-5.zip src/*",
-    "clean": "rimraf assignment-5.zip .parcel-cache dist",
-    "prepare-submission": "run-s prettier check zip"
+    "zip": "bestzip assignment-6.zip src/*",
+    "clean": "rimraf assignment-6.zip .parcel-cache dist",
+    "prepare-submission": "run-s prettier check zip",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "assignment-4": "file:",
-    "assignment-5": "file:"
+    "assignment-5": "file:",
+    "assignment-6": "file:"
   }
 }
