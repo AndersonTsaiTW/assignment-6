@@ -1,0 +1,50 @@
+#card-container {
+  grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+}
+
+.card {
+  color: #fff;
+  background-color: #0076d1;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 5%;
+  font-size: .7em;
+}
+
+.card:hover {
+  background-color: #0096bfab;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px #0000004d;
+}
+
+.song-image {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card-title {
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.card-footer {
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 1em;
+  display: flex;
+}
+
+.card-footer time, .card-footer .duration {
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.card-footer .lang {
+  margin: 2px;
+  padding: 0;
+  font-size: .8em;
+}
+/*# sourceMappingURL=assignment-5.c92073ef.css.map */

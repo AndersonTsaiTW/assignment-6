@@ -1,0 +1,157 @@
+#top {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#top h1 {
+  margin: 0;
+}
+
+.add-artist-link {
+  color: #fff;
+  background-color: #e63946;
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: inline-block;
+}
+
+.add-artist-link:hover {
+  background-color: #c62828;
+}
+
+#card-container {
+  grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+}
+
+.card {
+  color: #fff;
+  background-color: #0076d1;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 5%;
+  font-size: .7em;
+}
+
+.card:hover {
+  background-color: #0096bfab;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px #0000004d;
+}
+
+.song-image {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card-title {
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.card-footer {
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 1em;
+  display: flex;
+}
+
+.card-footer time, .card-footer .duration {
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.card-footer .lang {
+  margin: 2px;
+  padding: 0;
+  font-size: .8em;
+}
+
+html {
+  font-size: clamp(8px, 2vw, 14px);
+}
+
+#btn-icon {
+  display: none;
+}
+
+@media (width <= 600px) {
+  .card-footer, #btn-text {
+    display: none;
+  }
+
+  #btn-icon {
+    font-size: 1.2em;
+    display: inline;
+  }
+}
+
+#submit-region {
+  grid-template-columns: 80% 20%;
+  display: grid;
+}
+
+#copyright {
+  text-align: center;
+}
+
+form #artist-name, form #genre, form #social-media, form .media-link, form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5em;
+}
+
+#media-top {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5em;
+  display: flex;
+}
+
+#add-media {
+  color: #2a9d8f;
+  background-color: #fff;
+  border: 2px solid #2a9d8f;
+  border-radius: 5px;
+  margin: 0;
+  padding: .2rem .8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s;
+}
+
+#add-media:hover {
+  color: #fff;
+  background-color: #2a9d8f;
+}
+
+#media-container {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.media-block {
+  flex: 8;
+  align-items: center;
+  display: flex;
+}
+
+.media-block input {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: .5rem;
+}
+
+#description-label {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=assignment-6.c92073ef.css.map */

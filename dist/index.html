@@ -1,0 +1,89 @@
+<!-- /**
+ * WEB222 – Assignment 06
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name:       Anderson Yu-Hong Cai
+ *      Student ID: 109262246
+ *      Date:       2025/4/9
+ *
+ * Updated@asg05: Delete the table part and add the card-container
+ * Updated@asg06: build the footer and additional page
+ */ -->
+
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Anderson Yu-Hong Cai">
+
+    <title>EchoRock</title>
+    <!-- Classless CSS Stylesheet (feel free to change) - https://watercss.kognise.dev/ -->
+    <link rel="icon" href="/guitar_10808807.79f87a80.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <link rel="stylesheet" href="/assignment-6.c92073ef.css">
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <div id="top">
+        <a href="/index.html"><h1>EchoRock</h1></a>
+        <a href="/addArtist.html" class="add-artist-link">+Artist</a>
+      </div>
+      <p>
+        Keep the Vinyl Spinning, Keep the Rock Alive.
+        <br>
+        Rock is the music that changed the world — it once shook the Berlin
+        Wall, fueled anti-war movements, and continuously evolved through time.
+        From country rock, psychedelic rock, to pop rock, it keeps transforming,
+        always bringing us something fresh, rebellious, and unforgettable.
+      </p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr>
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <div id="card-container"></div>
+      <!-- Removed original table layout -->
+    </main>
+    <footer>
+      <h2>Get Our Newsletter!</h2>
+      <form id="newsletter-form" action="https://httpbin.org/post" method="POST">
+        <label for="email">Enjoy our weekly Rock by simple Click!</label>
+        <div id="submit-region">
+          <input type="email" id="email" name="email" required="">
+          <button type="submit">
+            <span id="btn-text">Subscribe</span>
+            <span id="btn-icon">✔</span>
+          </button>
+        </div>
+
+        <p id="newsletter-msg" style="color: green"></p>
+      </form>
+      <p id="copyright">© 2025 Echo Rock by Anderson Yu-Hong Cai</p>
+    </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="/assignment-6.b040860f.js"></script>
+    <script src="/assignment-6.72f6a3a7.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="/assignment-6.8f0c9192.js"></script>
+  <script src="/assignment-6.59712999.js"></script></body>
+</html>

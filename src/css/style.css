@@ -1,0 +1,170 @@
+/***** index.html and general *****/
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.5rem 1rem; */
+}
+
+#top h1 {
+  margin: 0;
+}
+
+.add-artist-link {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.add-artist-link:hover {
+  background-color: #c62828;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card {
+  background-color: #0076d1; /* follow water css style */
+  color: white;
+  border-radius: 10px;
+  font-size: 0.7em;
+  padding: 5%;
+  margin: 2%;
+}
+
+.card:hover {
+  /* consider the link in notes week8 */
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 150, 191, 0.67); /* follow water css style */
+}
+
+.song-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-title {
+  color: white;
+  margin: 10px 5px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*elements have dif height */
+  margin-top: 8px;
+  font-size: 1em;
+  color: #fff; /* follow water css style */
+}
+
+.card-footer time,
+.card-footer .duration {
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.card-footer .lang {
+  font-size: 0.8em;
+  margin: 2px;
+  padding: 0;
+}
+
+html {
+  font-size: clamp(8px, 2vw, 14px);
+}
+
+#btn-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .card-footer {
+    display: none;
+  }
+  #btn-text {
+    display: none;
+  }
+
+  #btn-icon {
+    display: inline;
+    font-size: 1.2em;
+  }
+}
+
+#submit-region {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+#copyright {
+  text-align: center;
+}
+
+/***** addArtist.html *****/
+form #artist-name,
+form #genre,
+form #social-media,
+form .media-link,
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+#media-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+/* Add button */
+#add-media {
+  background-color: white;
+  color: #2a9d8f;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.2rem 0.8rem;
+  border: 2px solid #2a9d8f;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  margin: 0;
+}
+
+#add-media:hover {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+#media-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.media-block {
+  flex: 8;
+  display: flex;
+  align-items: center;
+}
+
+.media-block input {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0.5rem;
+}
+
+#description-label {
+  margin-top: 1rem;
+}
